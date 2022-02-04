@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum Number</title>
+<head>
+   
+    <script>
+        function max()
+        {
+            var a,b,max;
+            a=parseInt(document.getElementById("first").value);
+            b=parseInt(document.getElementById("second").value);
+            if(a>b)
+            document.getElementById("answer").value=a;
+            else
+            document.getElementById("answer").value=b;
+        }
+    </script>
+    <style>
+        body{
+            background-color: rgb(212, 31, 31);
+        }
+        h1{
+            text-align: center;
+            text-decoration:underline;
+        }
+        button{
+            margin: 14px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>MAXIMUM NUMBER</h1>
+    <button>Enter the first Number = <input id = "first"> </button><br>
+    <button>Enter the second number = <input id="second"></button><br>
+    <button onclick="max()">MAXIMUM = <input id ="answer"></button>
+    <!-- <p>max = <input id="answer"></p> -->
+</body>
+</html>
