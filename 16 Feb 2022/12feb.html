@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            InFo
+        </title>
+    <script>
+        function info(){
+            var a = document.getElementById("name").value;
+            var b = document.getElementById("age").value;
+            var c = document.getElementById("number").value;
+
+            document.getElementById("name1").value = a;
+            document.getElementById("number1").value = b;
+            document.getElementById("age1").value = c;
+
+        }
+    </script>
+    </head>
+    <body>
+
+        <h1>Take info & dispaly </h1>
+        <p>Enter name: <input id = "name"></p>
+        <p>Enter age: <input id="age"></p>
+        <p>Enter Number: <input id ="number"></p>
+        <button onclick="return info()">Sumbit</button><br><br>
+        <p>Name:<input id="name1"></p>
+        <p>Age: <input id="age1"></p>
+        <p>Number:<input id="number1"></p>
+    </body>
+</html>
