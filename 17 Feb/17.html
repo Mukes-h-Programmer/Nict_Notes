@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>
+        MagicButton
+    </title>
+    <style>
+        #btn {
+            border-radius: 4px solid black;
+            background-color: #03cafc;
+            width: 100px;
+        }
+        #btn1 {
+            border-radius: 4px solid black;
+            background-color: #03cafc;
+            width: 100px;
+        }
+
+        #btn:hover {
+            background-color: black;
+            color: white;
+        }
+        #btn1:hover {
+            background-color: rgb(199, 27, 27);
+            color: white;
+        }
+
+        body {
+            margin: 20px;
+            padding: 15px;
+        }
+
+        /* } */
+    </style>
+</head>
+
+<body>
+    <script>
+        function prime() {
+            var c = 0, i;
+            var num = document.getElementById("number").value;
+            for (i = 1; i <= num; i++) {
+                if (num % i == 0) {
+                    c++;
+                }
+            }
+            if (c == 2)
+                document.write("prime");
+            else
+                document.write("not prime");
+        }
+        function perfect() {
+            var c = 0, i;
+            var num = document.getElementById("number").value;
+            for (i = 1; i < num; i++) {
+                if (num % i == 0) {
+                    c = c + i;
+                }
+            }
+            if (c == num)
+                document.write("perfect");
+            else
+                document.write("not perfect");
+        }
+    </script>
+    <h1>Magic Button</h1>
+    <p>Enter Number : <input type="number" id="number"></p>
+    <button onclick="prime()" id="btn1">Magic1</button>
+    <button onclick="perfect()" id="btn">Magic1</button>
+    <p>Enter Number : <input type="number" id="number"></p>
+</body>
+
+</html>
