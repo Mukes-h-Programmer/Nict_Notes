@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function check(){
+                var b = document.getElementById("a").checked;
+                document.getElementById("a").checked = true;
+                if(b==true)
+                {
+                    alert("correct");
+                }
+                else{
+                    alert("incorrect");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <p>What is capital of India</p>
+        <span><input type="radio" id="a" name="radio">Delhi</span>
+        <span><input type="radio" id="c" name="radio">mumbai</span><br> </brf>
+        <button type="submit" onclick="check()">submit</button>
+    </body>
+</html>
