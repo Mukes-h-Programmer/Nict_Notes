@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var c1= 0, c2=0;
+        function click1()
+        {
+            c1 = c1+1;
+        }
+        function click2()
+        {
+             c2 = c2+1;
+        }
+        function result(){
+        if(c1>c2)
+        alert(c1);
+        else
+        alert(c2);
+        }
+    </script>
+</head>
+<p><button onclick="return click1()">click1</button>
+<button onclick="return click2()">click2</button>
+<button onclick="return result()">Result</button></p>
+<body>
+    
+</body>
+</html>

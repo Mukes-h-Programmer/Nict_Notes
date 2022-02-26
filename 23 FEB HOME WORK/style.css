@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding: 15px;
+  font-family: "Roboto Mono", monospace;
+  color: white;
+  background-color: #4287f5;
+}
+h3 {
+  margin-left: 20px; 
+ 
+}
+
+p {
+  font-family: "Gideon Roman", cursive;
+  margin-left: 20px;
+}
+.question {
+  padding-top: 12px;
+}
+.btn {
+  margin: 8px 0px 10px 30px;
+}
+.foot{
+ background-color:  #4d5f82;
+ color: white;
+ padding: 20px 0;
+}
+th{
+  padding: 0 20px;
+}
+.main{
+  border: #4287f5 solid 2px;
+  margin: 0 20px;
+  background-color: #d5e4e6;
+}
+.answer {
+  padding-left: 36px;
+}
+#score{
+  border-radius: 7px;
+  border-style:double;
+  
+}

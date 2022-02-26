@@ -1,0 +1,157 @@
+<html>
+
+<head>
+    <script>
+        var total;
+        function setValues() {
+            naame = document.getElementById("naame").value;
+            mobile = document.getElementById("mobile").value;
+            email = document.getElementById("email").value;
+            tt = document.getElementById("tt").value;
+            numa = document.getElementById("numa").value;
+            numc = document.getElementById("namc").value;
+        }
+        function getValues() {
+
+            document.getElementById("naame").value = naame;
+            document.getElementById("mobile").value = mobile;
+            document.getElementById("email").value = email;
+            document.getElementById("tt").value = tt;
+            document.getElementById("numa").value = numa;
+            document.getElementById("namc").value = numc;
+        }
+        function calc() {
+
+            var switchvar = Stirng(document.getElementById('tt').value);
+            n1 = document.getElementById("numa").value;
+            n2 = document.getElementById("numc").value;
+
+            var c1 = c2 = 0;
+
+            total = 0;
+            n1 = parseInt(n1);
+            n2 = parseInt(n2);
+            switch (switchvar) {
+                case "PLATINUM 500/-": c1 = 500;
+                    c2 = 250;
+                    break;
+                case "GOLD 400/-": c1 = 400;
+                    c2 = 200;
+                    break;
+                case "SILVER 300/-": c1 = 300;
+                    c2 = 150;
+                    break;
+                default: c1 = c2 = 0;
+
+            }
+            c1 = (c1 * n1);
+            c2 = (c2 * n2);
+            total = parseInt(c1 + c2);
+
+            document.getElementById("t7").value = total;
+
+            total = parseInt(total);
+            var offer;
+
+            if (total > 1000 && total <= 1500) {
+                offer = "1 Popcorn + 1 Cold drink";
+            }
+            else if (total > 1500 && total <= 2500) {
+                offer = "2 Popcorn + 2 Cold drink";
+
+            }
+            else if (total >= 2500) {
+                offer = "2Pop + 2Cd + 1Lc";
+            }
+
+            document.getElementById("t8").value = offer;
+
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1><u>Customer &nbsp DETAILS</u></h1>
+        <table>
+            <tr>
+                <td>
+                    NAME :
+                </td>
+                <td>
+                    <input type="text" placeholder="Name" value="" id="naame">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    MOBILE :
+                </td>
+                <td>
+                    <input type="text" placeholder="Mobile" value="" id="mobile">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    EMAIL :
+                </td>
+                <td>
+                    <input type="text" placeholder="Email" value="" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td> Ticket Type :
+                </td>
+                <td>
+                    <select id="tt">
+                        <option> Select </option>
+                        <option value="PLATINUM 500/-"> PLATINUM 500/-</option>
+                        <option value="GOLD 400/-"> GOLD 400/-</option>
+                        <option value="SILVER 300/-"> SILVER 300/-</option>
+                </td>
+            </tr></select>
+            <tr>
+                <td>
+                    No. of Adults :
+                </td>
+                <td>
+                    <input type="number" placeholder="Adults" id="numa">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    No. of Child :
+                </td>
+                <td>
+                    <input type="number" placeholder="Child" id="numc">
+                </td>
+            </tr>
+        </table>
+        <input type="button" value="Enter" onclick="setValues(); getValues(); calc">
+        <div style="background-color:red; width: 100%; height: 15%; text-align: center; font-size: 70px;">KT MULTIPLEX
+        </div>
+        <table border="1" cellpadding="30px"><br><br>
+            <tr></tr>
+            <tr>
+                <th> Name of Person <input type="text" name="" id="t1"></th>
+                <th> Mobile <input type="text" name="" id="t2"></th>
+                <th> Email <input type="text" id="t3"></th>
+            </tr>
+            <tr>
+                <th> Ticket type </th>
+                <th> No. Of adults </th>
+                <th> No. Of Child </th>
+                <th> Total </th>
+                <th> Eligble For Offer </th>
+            </tr>
+            <tr>
+                <td><input type="textbox" id="t4"></td>
+                <td><input type="textbox" id="t5"></td>
+                <td><input type="textbox" id="t6"></td>
+                <td><input type="textbox" id="t7"></td>
+                <td><input type="textbox" id="t8"></td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>

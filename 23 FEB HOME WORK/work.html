@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gform</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 style="text-align: left">Play our Quiz Game</h1>
+    <br />
+    <table>
+      <tr>
+        <td></td>
+        <h3>Tick the correct Answer</h3>
+      </tr>
+    </table>
+    <div class="main">
+      <b><p class="question">Q1)What's your profession?</p></b>
+      <p><input type="radio" name="profession" id="profession1" />Programmer</p>
+      <p><input type="radio" name="profession" id="profession2" />Doctor</p>
+      <p>
+        <input type="radio" name="profession" id="profession3" />Engineering
+      </p>
+      <p><input type="radio" name="profession" id="profession4" />Farmer</p>
+
+      <b
+        ><p class="question">
+          Q2)What language you prefer for machine learning ?
+        </p></b>
+      
+
+      <p><input type="radio" name="profession1" id="C++" />C++</p>
+      <p><input type="radio" name="profession1" id="java" />java</p>
+      <p><input type="radio" name="profession1" id="python" />python</p>
+      <p><input type="radio" name="profession1" id="javascript" />javascript</p>
+
+      <b><p class="question">Q3)find incorrect programming language?</p></b>
+      <p><input type="radio" name="profession2" id="C++1" />C++</p>
+      <p><input type="radio" name="profession2" id="java1" />java</p>
+      <p><input type="radio" name="profession2" id="Physcology" />Physcology</p>
+      <p><input type="radio" name="profession2" id="python1" />python</p>
+
+      <b
+        ><p class="question">
+          Q4)What language you prefer for Android Devlopment?
+        </p></b
+      >
+      <p><input type="radio" name="profession3" id="python2" />python</p>
+      <p><input type="radio" name="profession3" id="scratch" />scratch</p>
+      <p><input type="radio" name="profession3" id="java2" />java</p>
+      <p><input type="radio" name="profession3" id="C2" />C</p>
+
+      <b><p class="question">Q5)Is java script diffferent from java?</p></b>
+      <p><input type="radio" name="profession4" id="Yes" />Yes</p>
+      <p><input type="radio" name="profession4" id="No" />No</p>
+      <p>
+        <b
+          ><p class="question">
+            Q6)what language you should learn first for web Devlopment?
+          </p></b
+        >
+      </p>
+
+      <p><input type="radio" name="profession5" id="java3" />java</p>
+      <p><input type="radio" name="profession5" id="python3" />python</p>
+      <p><input type="radio" name="profession5" id="html" />html</p>
+      <p><input type="radio" name="profession5" id="cotlin" />cotlin</p>
+
+      <b
+        ><p class="question">
+          Q7) What is the smallest header in HTML by default??
+        </p></b
+      >
+      <p><input type="radio" name="profession6" id="h1" />h1</p>
+      <p><input type="radio" name="profession6" id="h6" /> h6</p>
+      <p><input type="radio" name="profession6" id="h4" />h4</p>
+      <p><input type="radio" name="profession6" id="h5" />h5</p>
+
+      <b
+        ><p class="question">
+          Q8)What are the types of lists available in HTML?
+        </p></b
+      >
+      <p>
+        <input type="radio" name="profession7" id="list" />ordered list and
+        unordered list
+      </p>
+      <p>
+        <input type="radio" name="profession7" id="list2" />bullet,number list
+      </p>
+      <p><input type="radio" name="profession7" id="list3" />named,unnamed</p>
+      <p>
+        <input type="radio" name="profession7" id="list4" />None of the above
+      </p>
+
+      <b><p class="question">Q9)How to create an ordered list in HTML??</p></b>
+      <p><input type="radio" name="profession8" id="ul" />ul</p>
+      <p><input type="radio" name="profession8" id="ol" />ol</p>
+      <p><input type="radio" name="profession8" id="a" />a</p>
+      <p><input type="radio" name="profession8" id="href" />href</p>
+
+      <b
+        ><p class="question">
+          Q10)Which of the following is correct about HTML?
+        </p></b
+      >
+      <p>
+        <input type="radio" name="profession9" id="htm1" />HTML uses User
+        Defined Tags.
+      </p>
+      <p>
+        <input type="radio" name="profession9" id="html2" />HTML uses tags
+        defined within the language.
+      </p>
+      <p><input type="radio" name="profession9" id="html3" />Both A and B.</p>
+      <p>
+        <input type="radio" name="profession9" id="html4" />None of the above.
+      </p>
+
+      <button
+        type="button"
+        id="btn"
+        class="btn btn-outline-primary"
+        onclick=" return score()"
+      >
+        Submit
+      </button>
+      <b class="answer">Score:<input type="number" id="score" /></b>
+    </div>
+    <br />
+    <br />
+    <footer class="foot">
+      <table>
+        <tr>
+          <th>Contact Us</th>
+          <th>FAQ</th>
+          <th>About us</th>
+          <th>More</th>
+        </tr>
+      </table>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
