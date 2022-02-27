@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<script>
+    var r, a, b;
+    function add() {
+        a = document.getElementById("a").value;
+        b = document.getElementById("b").value;
+        r = Number(a) + Number(b);
+
+        document.getElementById("r").value = r;
+    }
+    function subtract() {
+        a = document.getElementById("a").value;
+        b = document.getElementById("b").value;
+        r = (a-b);
+        document.getElementById("r").value = r;
+    }
+    function multiply() {
+        a = document.getElementById("a").value;
+        b = document.getElementById("b").value;
+        r = (a*b);
+        document.getElementById("r").value = r;
+    }
+    function devide() {
+        a = document.getElementById("a").value;
+        b = document.getElementById("b").value;
+        r = (a/b);
+        document.getElementById("r").value = r;
+    }
+</script>
+
+<body>
+    <center>
+        <h1> <u> First Calculator </u></h1>
+        <br>
+        <table>
+            <tr>
+                <td>Enter first number: </td>
+                <td><input type="number" id="a" name="num1"></td>
+            </tr>
+            <tr>
+                <td>Enter second number: </td>
+                <td><input type="number" id="b" name="num2"></td>
+            </tr>
+        </table>
+        <p><input type="button" value="+" onclick="add()"></p>
+        <p><input type="button" value="-" onclick="subtract()"></p>
+        <p><input type="button" value="*" onclick="multiply()"></p>
+        <p><input type="button" value="/" onclick="devide()"></p>
+        <p>Result: <input id="r"></p>
+    </center>
+</body>
+
+</html>
