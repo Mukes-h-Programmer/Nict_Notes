@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Check Validation</h1>
+    <p>First random number: <input type="text" id="first" /></p>
+    <p>second random number: <input type="text" id="second" /></p>
+    <button id="add" onclick="add()">+</button>
+
+    <button id="sub" onclick="sub()">-</button>
+    <button id="multiply" onclick="multiply()">*</button>
+    <button id="divide" onclick="devide()">/</button>
+    <p>solution <input type="text" id="answer" /></p>
+    <p>Enter user answer <input type="text" id="userans" /></p>
+    <button onclick="validate()">validate</button>
+    <span id="validat" style="color:red"></span>
+
+    <script>
+      function add() {
+        var a = parseInt(Math.random() * 10 + 1);
+        document.getElementById("first").value = a;
+        var b = parseInt(Math.random() * 10 + 1);
+        document.getElementById("second").value = b;
+        var c = a + b;
+        document.getElementById("answer").value = c;
+      }
+
+      function devide() {
+        var a = parseInt(Math.random() * 10 + 1);
+        document.getElementById("first").value = a;
+        var b = parseInt(Math.random() * 10 + 1);
+        document.getElementById("second").value = b;
+        var c = a / b;
+        document.getElementById("answer").value = c;
+      }
+
+      function sub() {
+        var a = parseInt(Math.random() * 10 + 1);
+        document.getElementById("first").value = a;
+        var b = parseInt(Math.random() * 10 + 1);
+        document.getElementById("second").value = b;
+        var c = a - b;
+        document.getElementById("answer").value = c;
+      }
+
+      function multiply() {
+        var a = parseInt(Math.random() * 10 + 1);
+        document.getElementById("first").value = a;
+        var b = parseInt(Math.random() * 10 + 1);
+        document.getElementById("second").value = b;
+        var c = a * b;
+        document.getElementById("answer").value = c;
+      }
+      function validate() {
+        var ans = document.getElementById("answer").value;
+        var ans1 = document.getElementById("userans").value;
+       if(ans == ans1){
+         document.getElementById("validat").innerHTML="Correct";
+         
+        }
+        else{
+
+          document.getElementById("validat").innerHTML="inCorrect";
+        }
+      }
+    </script>
+  </body>
+</html>

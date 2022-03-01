@@ -10,8 +10,8 @@
             tt = document.getElementById("tt").value;
             numa = document.getElementById("numa").value;
             numc = document.getElementById("namc").value;
-        }
-        function getValues() {
+        // }
+        // function getValues() {
 
             document.getElementById("naame").value = naame;
             document.getElementById("mobile").value = mobile;
@@ -19,8 +19,8 @@
             document.getElementById("tt").value = tt;
             document.getElementById("numa").value = numa;
             document.getElementById("namc").value = numc;
-        }
-        function calc() {
+        // }
+        // function calc() {
 
             var switchvar = Stirng(document.getElementById('tt').value);
             n1 = document.getElementById("numa").value;
@@ -87,7 +87,7 @@
                     MOBILE :
                 </td>
                 <td>
-                    <input type="text" placeholder="Mobile" value="" id="mobile">
+                    <input type="number" placeholder="Mobile" value="" id="mobile">
                 </td>
             </tr>
             <tr>
@@ -95,7 +95,7 @@
                     EMAIL :
                 </td>
                 <td>
-                    <input type="text" placeholder="Email" value="" id="email">
+                    <input type="email" placeholder="Email" value="" id="email">
                 </td>
             </tr>
             <tr>
@@ -126,15 +126,15 @@
                 </td>
             </tr>
         </table>
-        <input type="button" value="Enter" onclick="setValues(); getValues(); calc">
+        <input type="button" value="Enter" onclick="return setValues()">
         <div style="background-color:red; width: 100%; height: 15%; text-align: center; font-size: 70px;">KT MULTIPLEX
         </div>
-        <table border="1" cellpadding="30px"><br><br>
+        <table border="10" cellpadding="30px"><br><br>
             <tr></tr>
             <tr>
                 <th> Name of Person <input type="text" name="" id="t1"></th>
-                <th> Mobile <input type="text" name="" id="t2"></th>
-                <th> Email <input type="text" id="t3"></th>
+                <th> Mobile <input type="number" name="" id="t2"></th>
+                <th> Email <input type="email" id="t3"></th>
             </tr>
             <tr>
                 <th> Ticket type </th>
