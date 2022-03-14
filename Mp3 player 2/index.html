@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body onmousemove="random_bg_color()">
+    <main>
+
+        <div class="player">
+            <div class="details">
+                <div class="now-playing">PLAYING x OF y</div>
+                <div class="track-art"></div>
+                <div class="track-name">Track Name</div>
+                <div class="track-artist">Track Artist</div>
+            </div>
+            <div class="buttons">
+                <div class="prev-track" id="g" onclick="prevTrack()">
+                    <img id="a" src="playnext.png" alt="">
+                </div>
+                <div class="playpause-track"  onclick="playpauseTrack()">
+                    <img id="b" src="play.png" alt="">
+                    <img id="f" src="pause.png" alt="">
+                </div>
+                <div class="next-track" id="e" onclick="nextTrack()">
+                    <img id="c" src="playnext.png" alt="">
+                </div>
+            </div>
+            <div class="slider_container">
+                <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+              </div>
+              <div class="slidercontainer">
+                <img id="i1" src="vdown.png" alt="">
+                <input id="i2" type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <img id="i3" src="vup.png" alt="">
+              </div>
+
+    </main>
+</body>
+<script src="index.js"></script>
+
+</html>
