@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px 5px;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 18px;
+}
+table{
+    display: flex;
+}
+th{
+    padding: 30px;
+
+}
+.groseryItem{
+    padding: 0 20px;
+}
+.price{
+    padding: 05px 0 0 105px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.itemQunatity{
+    width: 40px;
+}
+.quantity>td{
+    padding-left: 90px;
+}
+.delItem,.addItem{
+    width: 20px;
+}
+.buyItem{
+    margin:20px 0 0 100px;
+    width: 60px;
+    height: 30px;
+    
+}
+.itemQunatity{
+    padding-left: 20px;
+}
+.btn{
+    background-color: red;
+    color: black;
+    padding: 20px;
+    border: 1px solid lightcoral;
+    border-radius: 6px;
+    width: 100px;
+    font-size: 20px;
+    position:fixed;
+    bottom:0;
+    right: 20px;
+}

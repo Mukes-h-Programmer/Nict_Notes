@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-All in One</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <table>
+            <tr>
+                <th>Home</th>
+                <th>Grosery</th>
+                <th>Kicthen & applience</th>
+                <th>Fruits</th>
+                <th><input type="text" name="search" id="search" placeholder="Search any Item"></th>
+            </tr>
+        </table>
+    </nav>
+    <h1>Shop-All in one </h1>
+    <table>
+        <!-- ItemPicture -->
+        <tr class="item">
+            <td><img src="a.jpeg" alt="" class="groseryItem" id="item-1"></td>
+            <td><img src="b.jpeg" alt=""class="groseryItem" id="item-2"></td>
+            <td><img src="c.jpeg" alt=""class="groseryItem" id="item-3"></td>
+            <td><img src="d.jpeg" alt=""class="groseryItem" id="item-4"></td>
+            <td><img src="e.jpeg" alt=""class="groseryItem" id="item-4"></td>
+        </tr>
+        <!-- itemmQuantity -->
+        <tr class="quantity">
+            <td><button id="sub" class="delItem">-</button><input type="text" class="itemQunatity" id="item1"><button id="add" class="addItem">+</button></td>
+            <td><button id="sub1"class="delItem">-</button><input type="text" class="itemQunatity" id="item2"><button id="add1"class="addItem">+</button></td>
+            <td><button id="sub2"class="delItem">-</button><input type="text" class="itemQunatity" id="item3"><button id="add2"class="addItem">+</button></td>
+            <td><button id="sub3"class="delItem">-</button><input type="text" class="itemQunatity" id="item4"><button id="add3"class="addItem">+</button></td>
+            <td><button id="sub4"class="delItem">-</button><input type="text" class="itemQunatity" id="item5"><button id="add4"class="addItem">+</button></td>
+        </tr>
+        <!-- itemPrice -->
+        <tr class="price">
+            <td class="price">Bread(17$)</td>
+            <td class="price">Chowmin(26$)</td>
+            <td class="price">Ketchup(59$)</td>
+            <td class="price">Musturd oil(27$)</td>
+            <td class="price">pasta(20$)</td>
+        </tr>
+       
+    </table>
+    <button id="buyBtn" class="btn" >Buy</button>
+   
+    <script src="index.js"></script>
+    
+</body>
+</html>
